@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% block head %}
+    
+    {% endblock %}
+    {% block scripts %}
+    {% endblock %}
+    <title>
+        {% block title %}{% endblock %}
+    </title>
+
+    
+    <style>
+
+        {% block styles %}    {% endblock %}
+
+        body {
+            background-image:
+            url('https://webcomicms.net/sites/default/files/clipart/144314/animated-guitar-pictures-144314-7160323.gif');
+            /* background-repeat: no-repeat; */
+            /* background-attachment: fixed; */
+            /* background-size: cover; */
+        }
+        * { padding: 0; margin: 0; }
+        html, body, #fullheight {
+        min-height: 100% !important;
+        height: 100%;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div id="fullheight">
+        {% block contents %}
+        {% endblock %}
+    </div>
+
+</body>
+
+</html>
